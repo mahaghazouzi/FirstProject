@@ -4,6 +4,9 @@ import fils.Student;
 import fils.Teacher;
 public class Main {
 public static void main(String[] args) {
+    ;
+    System.out.println("le min = "+Person.min(5,10));
+
     Student maha = new Student("Maha",25,"1",15.5);
     maha.displayInfo();
     maha.study();
@@ -13,6 +16,7 @@ public static void main(String[] args) {
 
 
     System.out.println("before changes to maha's information");
+
     maha.displayInfo();
     maha.setName("Amal");
     maha.setAge(26);

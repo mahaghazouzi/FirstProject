@@ -4,12 +4,18 @@ import base.Person;
 public class Student extends Person {
     private String studentId;
     private double averageScore;
+ static int nbrEtudiant;
+ String nom;
     public Student(String name,int age,String studentId,double averageScore){
         super(name,age);
         this.studentId = studentId;
         this.averageScore = averageScore;
 
 
+    }
+    void Etudiant(String nom){
+        this.nom = nom;
+        nbrEtudiant++;
     }
     public String getStudentId(){
         return studentId;
