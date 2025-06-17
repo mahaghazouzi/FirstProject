@@ -30,6 +30,9 @@ public class Person {
                 return b;
             }
     }
+    public void parle(){
+        System.out.println("I am a person and I am speaking");
+    }
     public void setAge(int age) {
             this.age = age;
     }

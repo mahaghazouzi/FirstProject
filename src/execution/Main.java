@@ -3,10 +3,18 @@ import base.Person;
 import fils.Student;
 import fils.Teacher;
 public class Main {
+    public static int somme (int a, int b){
+        return a + b;
+    }
+    public static int somme(int a, int b, int c){
+        return a + b+c;
+    }
 public static void main(String[] args) {
-    ;
-    System.out.println("le min = "+Person.min(5,10));
 
+
+    System.out.println("le min = "+Person.min(5,10));
+    Person p = new Student("Maha", 25, "1", 15.5);
+    p.parle();
     Student maha = new Student("Maha",25,"1",15.5);
     maha.displayInfo();
     maha.study();
@@ -16,6 +24,11 @@ public static void main(String[] args) {
 
 
     System.out.println("before changes to maha's information");
+    Main m = new Main();
+    System.out.println(somme(5,15));
+    System.out.println(somme(5,15,10));
+
+
 
     maha.displayInfo();
     maha.setName("Amal");

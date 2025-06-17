@@ -17,6 +17,12 @@ public class Student extends Person {
         this.nom = nom;
         nbrEtudiant++;
     }
+
+    @Override
+    public void parle() {
+        System.out.println("I am a student and I am speaking");
+    }
+
     public String getStudentId(){
         return studentId;
 
